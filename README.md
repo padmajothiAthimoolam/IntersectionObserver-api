@@ -2,19 +2,19 @@
 
 This is a React application that fetches and displays products from a dummy API, with an infinite scrolling feature. As the user scrolls down, more products are automatically fetched and appended to the list.
 
-Features
+#Features
 Infinite Scrolling: Automatically loads more products as the user reaches the bottom of the page.
 Intersection Observer: The app uses the Intersection Observer API to detect when the user scrolls to the bottom, which triggers the loading of more items.
 React Hooks: Utilizes React hooks like useState, useEffect, and useRef for managing state, side effects, and references in the DOM.
 Responsive Layout: Displays the products in a responsive card layout using Bootstrap's grid system.
 
-Demo
+# Demo
 A brief description of the app functionality:
 
 Products Display: Each product is displayed in a card with a thumbnail image, description, and price.
 Scroll to Load More: As you scroll down, more products are fetched from the API and added to the list.
 
-Key Parts of the Code
+# Key Parts of the Code
 useState Hooks:
 
 products: Stores the fetched products.
@@ -39,9 +39,17 @@ API Used
 DummyJSON Products API
 The app fetches product data from this dummy API. It uses pagination, where limit specifies the number of products per page, and skip is used to determine how many products to skip for each new request.
 
-Example Request
+# Example Request
 The app fetches products using the following URL structure:
 https://dummyjson.com/products?limit=10&skip={page * 10}
 
 limit: The number of products to fetch at once.
 skip: How many products to skip, calculated by page * 10 where page is the current page number.
+
+# Using Intersection Observer provides us with following advantages:
+
+- Reduces the need for attaching event listeners to every scroll event.
+
+- Removes the need for manual calculations of the element's position and their event listeners, thus simplifying your code.
+
+- Efficient for observing multiple events compared to scroll or resize event listeners.
