@@ -52,4 +52,4 @@ skip: How many products to skip, calculated by page * 10 where page is the curre
 
 - Removes the need for manual calculations of the element's position and their event listeners, thus simplifying your code.
 
-- Efficient for observing multiple events compared to scroll or resize event listeners.
+- Efficient for observing multiple events compared to scroll or resize event listeners.Instead of clicking through pages, users can effortlessly scroll through the content that loads dynamically.
